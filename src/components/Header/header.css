@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    min-height: 142px;
+    width: 100%;
+    background-color: #B22830;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 250px 0;
+    border-top: solid 10px #53382C;
+    overflow: hidden;
+}
+
+.header__logo img{
+    width: 110px;
+    height: 84px;
+    margin-right: 84px;
+}
+
+.header-tools{
+    flex: 1;
+}
+
+.input-language{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin:18px 0;
+}
+
+.header__input{
+    width: 260px;
+    height: 30px;
+    background-color: #fff;
+    margin-right: 10px;
+    display: flex;
+}
+
+.header__input input{
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 0 12px;
+}
+
+.header__input input::placeholder{
+    font-style: italic;
+}
+
+.icon-seacrh{
+    height: 100%;
+    line-height: 30px;
+    margin-right: 12px;
+    color:rgb(81, 78, 78) ;
+    margin-top: 1px;
+    cursor: pointer;
+}
+
+.language-vn {
+    height: 30px;
+    width: 40px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1200px-Flag_of_Vietnam.svg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.language-eng {
+    height: 30px;
+    width: 40px;
+    background-image: url('https://cacnuoc.vn/wp-content/uploads/2016/04/UnionFlag.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.language:hover{
+    filter: brightness(150%);
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    justify-content: flex-start;
+}
+
+.nav__item{
+    padding: 16px 12px;
+    margin-right: 12px;
+    transition: all ease 0.7s;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fadeout{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+.nav__item:last-child{
+    margin-right: 0;
+}
+
+.nav__item:hover{
+    cursor: pointer;
+    background-color: #53382C;
+}
+
+
+.nav__content{
+    width: 100%;
+    background-color: #53382C;
+    position: absolute;
+    left: 0;
+    top: 143px;
+    display: none;
+    animation: fade ease 0.8s;
+}
+
+.nav__item-show-content:hover .nav__content{
+    display: block;
+}
+
+
+.grid{
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__row {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.grid__column{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 20%;
+}
+
+.subnav__heading{
+    font-size: 16px;
+    color: #f1bc7a;
+    font-weight: 800;
+    transition: all ease 0.5s;
+}
+
+.subnav__heading:hover{
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.subnav-list{
+    list-style: none;
+}
+
+.subnav-item{
+    margin: 12px 0;
+}
+
+.subnav-item-link{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 100;
+    display: block;
+    transition: all ease 0.2s;
+}
+
+.subnav-item-link:hover{
+    text-shadow: 1px 1px 1px #000;
+    padding-left: 10px;
+
+}
+
+.bannerMenu{
+    background-image: url('https://www.highlandscoffee.com.vn/skins/default/images/bgmenu.jpg');
+    background-size: cover;
+    padding: 15px;
+}
+
+.bannerMenu__heading{
+    color: #f1bc7a;
+    font-size: 20px;
+    text-align: left;
+    padding-right: 40px;
+    margin-bottom: 15px;
+}
+
+.bannerMenu__img{
+    width: 100%;
+    margin-top: 15px;
+}
