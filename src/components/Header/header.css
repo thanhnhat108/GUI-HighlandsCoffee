@@ -1,11 +1,5 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 .wrapper{
-    min-height: 142px;
+    max-height: 142px;
     width: 100%;
     background-color: #B22830;
 }
@@ -100,7 +94,7 @@
 }
 
 .nav__item{
-    padding: 16px 12px;
+    padding: 12px;
     margin-right: 12px;
     transition: all ease 0.7s;
 }
@@ -137,9 +131,10 @@
     background-color: #53382C;
     position: absolute;
     left: 0;
-    top: 143px;
+    top: 135px;
     display: none;
     animation: fade ease 0.8s;
+    z-index: 100;
 }
 
 .nav__item-show-content:hover .nav__content{
@@ -194,6 +189,7 @@
     font-weight: 100;
     display: block;
     transition: all ease 0.2s;
+    padding: 2px 0;
 }
 
 .subnav-item-link:hover{
@@ -214,6 +210,12 @@
     text-align: left;
     padding-right: 40px;
     margin-bottom: 15px;
+    transition: all ease 0.5s;
+}
+
+.bannerMenu__heading:hover{
+    text-shadow: 1px 1px 1px #000;
+    color: #fff;
 }
 
 .bannerMenu__img{

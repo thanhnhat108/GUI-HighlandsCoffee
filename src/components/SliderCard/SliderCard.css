@@ -1,0 +1,31 @@
+.slider{
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider img {
+    height: 500px;
+    width: 100%;
+}
+
+.slider-link{
+    font-size: 18px;
+    padding: 9px 62px;
+    color: #fff;
+    position: absolute;
+    bottom: 95px;
+    left: 370px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+
+.slider-link:hover{
+    background-color: rgb(227, 225, 225);
+    color: #000;
+    border-color: rgb(227, 225, 225);
+}
