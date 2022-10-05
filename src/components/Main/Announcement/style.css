@@ -1,0 +1,125 @@
+.contentImg {
+    height: 500px;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hover-f3bd7a,
+.hover-f1bc7a {
+    font-size: 18px;
+    color: #f3bd7a;
+    padding: 9px 62px;
+    position: absolute;
+    border: 1px solid;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hover-f3bd7a:hover {
+    color: #333;
+    background-color: #f3bd7a;
+    border-color: #f3bd7a;
+}
+
+.hover-f1bc7a:hover {
+    color: #fff;
+    background-color: #f1bc7a;
+    border-color: red;
+}
+
+.annouce {
+    height: 460px;
+    max-width: 100%;
+}
+
+.annouce__shop {
+    background-image: url('https://www.highlandscoffee.com.vn/vnt_upload/weblink/homepage-STORE_1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 460px;
+}
+
+.annouce__news {
+    background-image: url('https://www.highlandscoffee.com.vn/vnt_upload/weblink/bg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 198px 45px 115px;
+    height: 460px;
+}
+
+.annouce__news__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.annouce__news__heading-text {
+    font-size: 26px;
+    color: #343434;
+}
+
+.annouce__news__link {
+    color: #333;
+    font-weight: bold;
+    font-size: 13px;
+    transition: all ease-in-out 0.3s;
+    padding: 5px 0;
+}
+
+.annouce__news__link:hover {
+    color: #B22931;
+}
+
+.annouce__news__content {
+    margin: 12px 0;
+    padding-right: 10px;
+}
+
+.annouce__news__list {
+    list-style-type: none;
+}
+
+.annouce__news__item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.wrap-img {
+    margin-right: 14px;
+    min-width: 120px;
+    overflow: hidden
+}
+
+.annouce__news__item img {
+    width: 120px;
+    transition: all 0.3s linear;
+}
+
+.annouce__news__item img:hover{
+    transform: scale(1.08) rotate(0.01deg);
+    cursor: pointer;
+}
+
+.annouce__news__item__heading {
+    font-size: 16px;
+    text-decoration: none;
+    color: #343434;
+    font-weight: bold;
+    transition: all ease-in-out 0.3s; 
+}
+
+
+.date {
+    margin-top: 8px;
+}
+
+.annouce__news__item__heading:hover {
+    color: #B22931;
+}

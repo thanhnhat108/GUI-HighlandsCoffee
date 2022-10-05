@@ -13,9 +13,9 @@ const SliderCard = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        // autoplay: true,
+        autoplay: true,
         appendDots: (dots) => {
-            return <ul style={{ margin: "40px" }}>{dots}</ul>
+            return <ul style={{ marginBottom: "50px" }}>{dots}</ul>
         },
     }
     return (
@@ -27,7 +27,7 @@ const SliderCard = () => {
 
                     <div key={item.id}>
                         <img src={item.link} alt=""  />
-                        {item.id===5 ? <a href="/" className="slider-link">KHÁM PHÁ THÊM</a> : ''}
+                        {item.id===5 ? <a href="/" className="slider-link imgLink">KHÁM PHÁ THÊM</a> : ''}
                     </div>
                 ))}
             </Slider>

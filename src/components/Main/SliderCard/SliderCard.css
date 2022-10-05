@@ -1,0 +1,17 @@
+.slider{
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+}
+
+.slider img {
+    height: 100%;
+    width: 100%;
+}
+
+.slider-link:hover{
+    background-color: rgb(227, 225, 225);
+    color: #000;
+    border-color: rgb(227, 225, 225);
+}
