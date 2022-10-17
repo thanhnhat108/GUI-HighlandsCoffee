@@ -1,12 +1,16 @@
 import "./header.css"
 import { BsSearch } from "react-icons/bs"
+import { Link } from "react-router-dom"
+import { useState } from "react"
 const Header = () => {
+    const [idNav, setidNav] = useState(0)
+
     return (
         <div className="wrapper">
             <header className="header">
-                <div className="header__logo">
+                <Link onClick={() => setidNav(0)} to='/' className="header__logo">
                     <img src="https://www.highlandscoffee.com.vn/vnt_upload/weblink/1200px-Highlands_Coffee_logo.svg.png" alt="logo" />
-                </div>
+                </Link>
                 <div className="header-tools">
                     <div className="input-language" >
                         <div className="header__input">
@@ -19,8 +23,9 @@ const Header = () => {
                     </div>
                     <nav className="nav">
                         <ul className="nav-list">
-                            <li className="nav__item">QUÁN CÀ PHÊ</li>
-                            <li className="nav__item nav__item-show-content">THỰC ĐƠN
+                            <li style={{backgroundColor: idNav === 1 ? "#53382C" : "" }} onClick={() => setidNav(1)} className="nav__item">QUÁN CÀ PHÊ</li>
+                            <li style={{backgroundColor: idNav === 2 ? "#53382C" : "" }} onClick={() => setidNav(2)} className="nav__item nav__item-show-content">
+                                <Link className="nav__item__link" to='/product'>THỰC ĐƠN</Link>
                                 <div className="nav__content">
                                     <div className="grid" style={{ paddingBottom: '30px' }}>
                                         <div className="grid__row" style={{ textAlign: 'center' }}>

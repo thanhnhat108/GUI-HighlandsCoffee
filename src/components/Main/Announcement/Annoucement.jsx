@@ -1,6 +1,19 @@
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import { FaRegPaperPlane } from "react-icons/fa"
+import { IoIosArrowForward } from "react-icons/io"
 import Img from "./Img"
 
 const Annoucement = () => {
+    const settings = {
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: false,
+    }
     return (
         <>
             <Img
@@ -24,7 +37,23 @@ const Annoucement = () => {
                 url='https://www.highlandscoffee.com.vn/vnt_upload/weblink/HCO-7553-FESTIVE-2022-PRODUCT-KV-DIGITAL-WEB-1440X460.jpg'
             />
             <div className="annouce grid_row">
-                <div className="annouce__shop col2"></div>
+                <div className="annouce__shop col2">
+                    <h3 className="annouce__shop__heading">QUÁN MỚI</h3>
+                    <Slider {...settings}>
+                    
+                    <div className="annouce__shop__main">
+                        <a className=" annouce__shop__link annouce__shop__main__heading" href="/">HÀM CÁ MẬP</a>
+                        <a href="/" className="annouce__shop__link annouce__shop__addr">Tầng 3, 1-3-5 Đinh Tiên Hoàng, Phường Hàng Trống, Quận Hoàn Kiếm, Hà Nội</a>
+                        <a href="/" className=" annouce__shop__location">TÌM ĐƯỜNG <IoIosArrowForward className="annouce__shop__location__icon" /></a>
+                    </div>
+                    <div className="annouce__shop__main">
+                        <a className="annouce__shop__link annouce__shop__main__heading" href="/">721 Huỳnh Tấn Phát</a>
+                        <a href="/" className="annouce__shop__link annouce__shop__addr">721 Huỳnh Tấn Phát, Phường Phú Thuận, Quận 7, Tp. Hồ Chí Minh</a>
+                        <a href="/" className="annouce__shop__link annouce__shop__location">TÌM ĐƯỜNG <IoIosArrowForward className="annouce__shop__location__icon" /></a>
+                    </div>
+                    </Slider>
+                </div>
+
                 <div className="annouce__news col2">
                     <div className="annouce__news__heading">
                         <h3 className="annouce__news__heading-text">TIN MỚI NHẤT</h3>
@@ -76,9 +105,9 @@ const Annoucement = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="annouce__news__input">
-                        <input type="text" className="Nhập email của bạn để nhận thông tin" />
-                        <a href="/"><i></i> Gửi</a>
+                    <div className="annouce__news__form">
+                        <input className="annouce__news__input" type="text" placeholder="Nhập email của bạn để nhận thông tin..." />
+                        <button className="annouce__news__btn-submit"><FaRegPaperPlane className="annouce__news__form__icon" /> GỬI</button>
                     </div>
 
                 </div>

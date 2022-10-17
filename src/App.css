@@ -8,6 +8,56 @@
     width: 100%;
 }
 
+.App {
+    position: relative;
+}
+
+.moveToTop {
+    position: fixed;
+    right: 16px;
+    bottom: 80px;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #878787;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.moveToTop__icon {
+    position: absolute;
+    transform: rotate(90deg);
+    font-size: 30px;
+    color: #878787;
+    cursor: pointer;
+}
+
+.contact-admin { 
+    position: fixed;
+    right: 32px;
+    bottom: 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #B22830;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 2px 2px 3px 1px #666;
+}
+
+.contact-admin__icon {
+    position: absolute;
+    font-size: 35px;
+    color: #fff;
+}
+
 .imgLink{
     font-size: 18px;
     padding: 9px 62px;
@@ -35,5 +85,22 @@
 
 .col2 {
     width: 50%;
+}
+
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.lazy-start {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fade;
 }
 

@@ -2,7 +2,7 @@ import './style.css'
 const Img = ({ url, text, bottom, left, hover, isLink }) => {
     return (
         <div
-            className="contentImg"
+            className="contentImg lazy-start"
             style={{
                 backgroundImage: `url('${url}')`
             }}

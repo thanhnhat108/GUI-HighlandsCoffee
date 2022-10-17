@@ -99,21 +99,9 @@
     transition: all ease 0.7s;
 }
 
-@keyframes fade{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-@keyframes fadeout{
-    from{
-        opacity: 1;
-    }
-    to{
-        opacity: 0;
-    }
+.nav__item__link {
+    text-decoration: none;
+    color: #fff;
 }
 
 .nav__item:last-child{
@@ -135,6 +123,7 @@
     display: none;
     animation: fade ease 0.8s;
     z-index: 100;
+    cursor: auto;
 }
 
 .nav__item-show-content:hover .nav__content{
@@ -167,6 +156,7 @@
     color: #f1bc7a;
     font-weight: 800;
     transition: all ease 0.5s;
+    cursor: pointer;
 }
 
 .subnav__heading:hover{
@@ -216,9 +206,12 @@
 .bannerMenu__heading:hover{
     text-shadow: 1px 1px 1px #000;
     color: #fff;
+    cursor: pointer;
+
 }
 
 .bannerMenu__img{
     width: 100%;
     margin-top: 15px;
+    cursor: pointer;
 }
