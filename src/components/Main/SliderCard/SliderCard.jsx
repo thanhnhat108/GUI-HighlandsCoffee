@@ -20,18 +20,15 @@ const SliderCard = () => {
     }
     return (
 
-        <div className="slider">
 
-            <Slider {...settings}>
+            <Slider className="slider" {...settings}>
                 {Sdata.map(item => (
-
                     <div key={item.id}>
                         <img src={item.link} alt=""  />
                         {item.id===5 ? <a href="/" className="slider-link imgLink">KHÁM PHÁ THÊM</a> : ''}
                     </div>
                 ))}
             </Slider>
-        </div>
     )
 }
 
