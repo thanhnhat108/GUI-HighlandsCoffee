@@ -1,0 +1,45 @@
+.new-item__img {
+    height: 250px;
+    overflow: hidden;
+}
+
+.new-item__img img {
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s linear;
+}
+
+.new-item__img img:hover {
+    transform: scale(1.05) rotate(0.01deg);
+    cursor: pointer;
+}
+
+.new-content {
+    font-size: 14px;
+    color: #333;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    margin: 12px 0 8px;
+}
+
+.new-content:hover {
+    color: #B22830;
+    cursor: pointer;
+}
+
+.new-dates {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.new-dates__icon {
+    color: #B22830;
+    margin-right: 8px;
+}
+
+.new-dates p {
+    color: #888;
+    font-size: 15px;
+}

@@ -7,17 +7,26 @@ import { AiOutlineWechat } from "react-icons/ai"
 function App() {
   const [ShowGoToTop, setShowGotoTop] = useState(false)
 
+  const handleMoveToTop = () => {
+    document.documentElement.scrollTop = 0
+  }
+
   useEffect(() => {
     const handleScroll = () => {
       setShowGotoTop(window.scrollY >= 100)
     }
     window.addEventListener('scroll', handleScroll)
+  return () => {
+    window.removeEventListener('scroll', handleScroll)
+  }
+
   }, [])
+
   return (
     <div className="App">
       <Pages />
       {ShowGoToTop ?
-        <div className='moveToTop'>
+        <div className='moveToTop' onClick={() => handleMoveToTop()}>
           <MdOutlineArrowBackIosNew className='moveToTop__icon' />
         </div> : ""}
       <div className='contact-admin'>

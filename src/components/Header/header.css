@@ -131,13 +131,13 @@
 }
 
 
-.grid{
+.grid-header{
     width: 1100px;
     max-width: 100%;
     margin: 0 auto;
 }
 
-.grid__row {
+.grid__row-header {
     margin-top: 12px;
     display: flex;
     flex-wrap: wrap;
@@ -145,7 +145,7 @@
     margin-right: -5px;
 }
 
-.grid__column{
+.grid__column-header{
     padding-left: 10px;
     padding-right: 10px;
     width: 20%;

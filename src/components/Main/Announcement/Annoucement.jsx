@@ -37,7 +37,7 @@ const Annoucement = () => {
                 url='https://www.highlandscoffee.com.vn/vnt_upload/weblink/HCO-7553-FESTIVE-2022-PRODUCT-KV-DIGITAL-WEB-1440X460.jpg'
             />
             <div className="annouce grid_row">
-                <div className="annouce__shop col2">
+                <div className="annouce__shop col-half">
                     <h3 className="annouce__shop__heading">QUÁN MỚI</h3>
                     <Slider {...settings}>
                     
@@ -54,7 +54,7 @@ const Annoucement = () => {
                     </Slider>
                 </div>
 
-                <div className="annouce__news col2">
+                <div className="annouce__news col-half">
                     <div className="annouce__news__heading">
                         <h3 className="annouce__news__heading-text">TIN MỚI NHẤT</h3>
                         <a className="annouce__news__link" href="/">Xem toàn bộ <i></i></a>

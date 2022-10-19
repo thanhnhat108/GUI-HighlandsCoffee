@@ -23,13 +23,15 @@ const Header = () => {
                     </div>
                     <nav className="nav">
                         <ul className="nav-list">
-                            <li style={{backgroundColor: idNav === 1 ? "#53382C" : "" }} onClick={() => setidNav(1)} className="nav__item">QUÁN CÀ PHÊ</li>
+                            <li  onClick={() => setidNav(0)} className="nav__item">
+                                <Link className="nav__item__link" to='/'>QUÁN CÀ PHÊ</Link>
+                            </li>
                             <li style={{backgroundColor: idNav === 2 ? "#53382C" : "" }} onClick={() => setidNav(2)} className="nav__item nav__item-show-content">
                                 <Link className="nav__item__link" to='/product'>THỰC ĐƠN</Link>
                                 <div className="nav__content">
-                                    <div className="grid" style={{ paddingBottom: '30px' }}>
-                                        <div className="grid__row" style={{ textAlign: 'center' }}>
-                                            <div className="grid__column" >
+                                    <div className="grid-header" style={{ paddingBottom: '30px' }}>
+                                        <div className="grid__row-header" style={{ textAlign: 'center' }}>
+                                            <div className="grid__column-header" >
                                                 <h3 className="subnav__heading">CÀ PHÊ</h3>
                                                 <ul className="subnav-list">
                                                     <li className="subnav-item"><a href="/" className="subnav-item-link">Cà Phê Phin</a></li>
@@ -37,14 +39,14 @@ const Header = () => {
                                                     <li className="subnav-item"><a href="/" className="subnav-item-link">Cà Phê Espresso</a></li>
                                                 </ul>
                                             </div>
-                                            <div className="grid__column">
+                                            <div className="grid__column-header">
                                                 <h3 className="subnav__heading">FREEZE</h3>
                                                 <ul className="subnav-list">
                                                     <li className="subnav-item"><a href="/" className="subnav-item-link">Freeze Cà Phê Phin</a></li>
                                                     <li className="subnav-item"><a href="/" className="subnav-item-link">Freeze Không Cà Phê</a></li>
                                                 </ul>
                                             </div>
-                                            <div className="grid__column">
+                                            <div className="grid__column-header">
                                                 <h3 className="subnav__heading">TRÀ</h3>
                                                 <ul className="subnav-list">
                                                     <li className="subnav-item"><a href="/" className="subnav-item-link">Trà Sen Vàng Mới</a></li>
@@ -53,7 +55,7 @@ const Header = () => {
                                                     <li className="subnav-item"><a href="/" className="subnav-item-link">TRÀ NHIỆT ĐỚI (MỚI!)</a></li>
                                                 </ul>
                                             </div>
-                                            <div className="grid__column">
+                                            <div className="grid__column-header">
                                                 <h3 className="subnav__heading">KHÁC</h3>
                                                 <ul className="subnav-list">
                                                     <li className="subnav-item"><a href="/" className="subnav-item-link">Bánh Ngọt</a></li>
@@ -62,7 +64,7 @@ const Header = () => {
                                                     <li className="subnav-item"><a href="/" className="subnav-item-link">Thực Đơn Giao Hàng</a></li>
                                                 </ul>
                                             </div>
-                                            <div className="grid__column">
+                                            <div className="grid__column-header">
                                                 <div className="bannerMenu">
                                                     <h3 className="bannerMenu__heading">Phin Sữa Đá Đậm Đà Chất Phin! 29.000đ</h3>
                                                     <img className="bannerMenu__img" src="https://www.highlandscoffee.com.vn/vnt_upload/weblink/z1.jpg" alt="Phin sữa đá" />
@@ -72,11 +74,12 @@ const Header = () => {
                                     </div>
                                 </div>
                             </li>
-                            <li className="nav__item nav__item-show-content">TIN TỨC
+                            <li style={{backgroundColor: idNav === 3 ? "#53382C" : "" }} onClick={() => setidNav(3)} className="nav__item nav__item-show-content" >
+                                <Link className="nav__item__link" to='/news'>TIN TỨC</Link>
                                 <div className="nav__content">
-                                    <div className="grid" style={{ paddingBottom: '30px' }}>
-                                        <div className="grid__row" style={{ textAlign: 'center' }}>
-                                            <div className="grid__column" >
+                                    <div className="grid-header" style={{ paddingBottom: '30px' }}>
+                                        <div className="grid__row-header" style={{ textAlign: 'center' }}>
+                                            <div className="grid__column-header" >
                                                 <h3 className="subnav__heading">TIN TỨC & SỰ KIỆN</h3>
                                                 <ul className="subnav-list">
                                                     <li className="subnav-item"><a href="/" className="subnav-item-link">Cà Phê Phin</a></li>
@@ -84,16 +87,16 @@ const Header = () => {
                                                     <li className="subnav-item"><a href="/" className="subnav-item-link">Cà Phê Espresso</a></li>
                                                 </ul>
                                             </div>
-                                            <div className="grid__column">
+                                            <div className="grid__column-header">
                                                 <h3 className="subnav__heading">TIN KHUYẾN MẠI</h3>
                                                 <ul className="subnav-list">
                                                     <li className="subnav-item"><a href="/" className="subnav-item-link">Freeze Cà Phê Phin</a></li>
                                                     <li className="subnav-item"><a href="/" className="subnav-item-link">Freeze Không Cà Phê</a></li>
                                                 </ul>
                                             </div>
-                                            <div className="grid__column"></div>
-                                            <div className="grid__column"></div>
-                                            <div className="grid__column">
+                                            <div className="grid__column-header"></div>
+                                            <div className="grid__column-header"></div>
+                                            <div className="grid__column-header">
                                                 <div className="bannerMenu">
                                                     <h3 className="bannerMenu__heading">Tự hào sinh ra từ đất Việt, 1999!</h3>
                                                     <img className="bannerMenu__img" src="https://www.highlandscoffee.com.vn/vnt_upload/weblink/Thumbnail.jpg" alt="Tự hào sinh ra từ đất Việt, 1999!" />
@@ -103,25 +106,26 @@ const Header = () => {
                                     </div>
                                 </div>
                             </li>
-                            <li className="nav__item nav__item-show-content">CỘNG ĐỒNG
+                            <li style={{backgroundColor: idNav === 4 ? "#53382C" : "" }} onClick={() => setidNav(4)} className="nav__item nav__item-show-content">
+                            <Link className="nav__item__link" to='/community'>CỘNG ĐỒNG</Link>
                                 <div className="nav__content">
-                                    <div className="grid" style={{ paddingBottom: '30px' }}>
-                                        <div className="grid__row" style={{ textAlign: 'center' }}>
-                                            <div className="grid__column" >
+                                    <div className="grid-header" style={{ paddingBottom: '30px' }}>
+                                        <div className="grid__row-header" style={{ textAlign: 'center' }}>
+                                            <div className="grid__column-header" >
                                                 <h3 className="subnav__heading">GIÁ TRỊ VĂN HÓA VIỆT</h3>
                                                 <ul className="subnav-list">
                                                     <li className="subnav-item"><a href="/" className="subnav-item-link">Đương Đại Hóa Tranh Đông Hồ</a></li>
                                                 </ul>
                                             </div>
-                                            <div className="grid__column">
+                                            <div className="grid__column-header">
                                                 <h3 className="subnav__heading">CỘNG ĐỒNG</h3>
                                                 <ul className="subnav-list">
                                                     <li className="subnav-item"><a href="/" className="subnav-item-link">Lớp Học Cho Em</a></li>
                                                 </ul>
                                             </div>
-                                            <div className="grid__column"></div>
-                                            <div className="grid__column"></div>
-                                            <div className="grid__column">
+                                            <div className="grid__column-header"></div>
+                                            <div className="grid__column-header"></div>
+                                            <div className="grid__column-header">
                                                 <div className="bannerMenu">
                                                     <h3 className="bannerMenu__heading">Đương Đại Hóa Tranh Đông Hồ</h3>
                                                     <img className="bannerMenu__img" src="https://www.highlandscoffee.com.vn/vnt_upload/weblink/KV_Highlands_CSR_1.jpg" alt="Đương Đại Hóa Tranh Đông Hồ" />
@@ -131,21 +135,22 @@ const Header = () => {
                                     </div>
                                 </div>
                             </li>
-                            <li className="nav__item nav__item-show-content">VỀ CHÚNG TÔI
+                            <li style={{backgroundColor: idNav === 5 ? "#53382C" : "" }} onClick={() => setidNav(5)} className="nav__item nav__item-show-content">
+                            <Link className="nav__item__link" to='/about-us'>VỀ CHÚNG TÔI</Link>
                                 <div className="nav__content">
-                                    <div className="grid" style={{ paddingBottom: '30px' }}>
-                                        <div className="grid__row" style={{ textAlign: 'center' }}>
-                                            <div className="grid__column" >
+                                    <div className="grid-header" style={{ paddingBottom: '30px' }}>
+                                        <div className="grid__row-header" style={{ textAlign: 'center' }}>
+                                            <div className="grid__column-header" >
                                                 <h3 className="subnav__heading">KHỞI NGUỒN</h3>
                                             </div>
-                                            <div className="grid__column">
+                                            <div className="grid__column-header">
                                                 <h3 className="subnav__heading">DỊCH VỤ KHÁCH HÀNG</h3>
                                             </div>
-                                            <div className="grid__column">
+                                            <div className="grid__column-header">
                                                 <h3 className="subnav__heading">NGHỀ NGHIỆP</h3>
                                             </div>
-                                            <div className="grid__column"></div>
-                                            <div className="grid__column">
+                                            <div className="grid__column-header"></div>
+                                            <div className="grid__column-header">
                                                 <div className="bannerMenu">
                                                     <h3 className="bannerMenu__heading">Thương hiệu bắt nguồn từ cà phê Việt!</h3>
                                                     <img className="bannerMenu__img" src="https://www.highlandscoffee.com.vn/vnt_upload/weblink/ABOUT-ORIGIN.png" alt="Thương hiệu bắt nguồn từ cà phê Việt!" />

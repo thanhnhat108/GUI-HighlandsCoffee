@@ -1,0 +1,36 @@
+.news {
+    margin-top: 48px;
+}
+
+.news__heading {
+    font-size: 45px;
+    color: #53382C;
+    margin-bottom: 26px;
+    font-weight: 800;
+    padding: 0 12px;
+}
+
+.news__main {
+    margin-bottom: 40px;
+}
+
+.wrap-btn-more-news {
+    text-align: center;
+    margin: 30px 0 70px;
+}
+
+.btn-more-news {
+    font-size: 18px;
+    color: #B22830;
+    padding: 7px 80px;
+    border: 1px solid #B22830;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-more-news:hover {
+    background-color: #B22830;
+    color: #fff;
+}
+
